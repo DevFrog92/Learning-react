@@ -1,4 +1,5 @@
-import Recipe from "./Ingredients";
+import React from "react";
+import Recipe from "./Recipe";
 
 function Menu({ recipes }) {
   return (
