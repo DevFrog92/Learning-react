@@ -1,0 +1,42 @@
+[
+  {
+    "name": "구운 연어",
+    "ingredients": [
+      {
+        "name": "연어",
+        "amount": 500,
+        "measurement": "그램"
+      },
+      {
+        "name": "물",
+        "amount": 500,
+        "measurement": "그램"
+      },
+      {
+        "name": "마늘",
+        "amount": 3,
+        "measurement": "쪽"
+      }
+    ]
+  },
+  {
+    "name": "삶은 연어",
+    "ingredients": [
+      {
+        "name": "연어",
+        "amount": 500,
+        "measurement": "그램"
+      },
+      {
+        "name": "물",
+        "amount": 500,
+        "measurement": "그램"
+      },
+      {
+        "name": "파",
+        "amount": "1/2",
+        "measurement": "단"
+      }
+    ]
+  }
+]
