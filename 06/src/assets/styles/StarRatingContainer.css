@@ -22,3 +22,27 @@
   color: orange;
   text-decoration: underline;
 }
+
+.rating-img-wrapper {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expression-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.fig-caption {
+  font-size: 11px;
+  color: lightgray;
+}
+
+.fig-caption a {
+  color: lightgray;
+}
