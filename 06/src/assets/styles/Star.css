@@ -1,0 +1,10 @@
+.star-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+.star-icon:last-of-type {
+  margin-right: 0;
+}
