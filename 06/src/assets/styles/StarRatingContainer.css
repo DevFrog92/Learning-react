@@ -1,0 +1,48 @@
+.star-rating-container {
+  width: 100vw;
+  height: 400px;
+}
+
+.star-rating-container h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  color: #292929;
+}
+
+.rating-desc {
+  font-size: 1.3rem;
+  text-align: center;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.rating-desc .point {
+  color: orange;
+  text-decoration: underline;
+}
+
+.rating-img-wrapper {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expression-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.fig-caption {
+  font-size: 11px;
+  color: lightgray;
+}
+
+.fig-caption a {
+  color: lightgray;
+}
