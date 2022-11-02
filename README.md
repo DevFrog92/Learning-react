@@ -1,4 +1,4 @@
-# Refactoring Javascript TIL
+# Learning React TIL
 - 교재: [Learning React](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=273792432)
 - 정리: [Learning React 학습노트](https://www.notion.so/bd8490767e484f40ad44dc51fd989591?v=29a505c3a72447c8aaabb358d98a753d)
 
