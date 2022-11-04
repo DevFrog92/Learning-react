@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import StarRating from "../components/StarRating";
 import "../assets/styles/StarRatingContainer.css";
-// parcel에서 여러 이미지를 한번에 불러오는 방법 -> 아래와 같이 이미지를 로드하면 배열로 담겨온다.
 import icons from "../assets/images/*.png";
 
 export default function StarRatingContainer() {
