@@ -8,7 +8,7 @@ export default function StarRating({ totalStarts = 5, selectStar, onSelect }) {
   return (
     <div className="star-rating">
       {
-        createArray(totalStarts).map((n, i) => <Star key={i} index={i} selected={i < selectStar} onSelect={onSelect} />)
+        createArray(totalStarts).map((_, i) => <Star key={i} index={i} selected={i < selectStar} onSelect={onSelect} />)
       }
     </div>
   );

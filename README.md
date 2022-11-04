@@ -3,7 +3,7 @@
 - 정리: [Learning React 학습노트](https://www.notion.so/bd8490767e484f40ad44dc51fd989591?v=29a505c3a72447c8aaabb358d98a753d)
 
 
-## 목차 <small>(1회차)</small>
+## 목차 <small>(2회차)</small>
 - [x] 1. 리액트 소개
 - [x] 2. 리액트를 위한 자바스크립트
 - [x] 3. 자바스크립트를 활용한 함수형 프로그래밍
