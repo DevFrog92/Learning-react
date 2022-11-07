@@ -1,4 +1,4 @@
-import StarRating from "./pages/StarRating";
+import StarRating from "./components/StarRating";
 
 const  App = () =>{
   return (
