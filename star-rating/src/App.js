@@ -1,7 +1,9 @@
-function App() {
+import StarRating from "./pages/StarRating";
+
+const  App = () =>{
   return (
     <div className="App">
-    App
+      <StarRating/>
     </div>
   );
 }
