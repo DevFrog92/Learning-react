@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { faker } from '@faker-js/faker';
+import { FixedSizeList } from "react-window";
 
 const GithubUser = ({ login }) => {
   const [data, setData] = useState();
@@ -38,16 +40,35 @@ function List({ data = [], renderEmpty, renderItem }) {
     )
 }
 
+const bigList = [...Array(5000)].map(() => ({
+  name: faker.name.fullName(),
+  email: faker.internet.email(),
+  avatar: faker.internet.avatar()
+}))
+
 const App = () => {
-  return <List
-    data={tahoe_peaks}
-    renderEmpty={<p>This List is empty</p>}
-    renderItem={item =>
-      <>
-        {item.name} - {item.elevation.toLocaleString()}ft
-      </>
-    }
-  />
+  const renderRow = ({ index, style }) => (
+    <div style={{ ...style, ...{ display: "flex" } }}>
+      <img
+        src={bigList[index].avatar}
+        alt={bigList[index].name}
+        width={ 50}
+      />
+      <p>
+        { bigList[index].name}-{bigList[index].email }
+      </p>
+    </div>
+  )
+  return (
+    <FixedSizeList
+      height={window.innerHeight}
+      width={window.innerWidth}
+      itemCount={bigList.length}
+      itemSize={50}
+    >
+      { renderRow }
+    </FixedSizeList>
+  )
 }
 
 export default App;
