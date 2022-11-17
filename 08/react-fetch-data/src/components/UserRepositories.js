@@ -13,6 +13,7 @@ const UserRepositories = ({
         <RepoMenu
           repositories={data}
           selectedRepo={selectedRepo}
+          login={ login}
           onSelect={onSelect}
         />
       )}
