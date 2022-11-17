@@ -1,24 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { faker } from '@faker-js/faker';
 import { FixedSizeList } from "react-window";
+import GithubUser from "./components/GithubUser";
+import SearchForm from "./components/SearchForm";
 
-const GithubUser = ({ login }) => {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    if (!login) return;
-    fetch(`https://api.github.com/users/${login}`)
-      .then(response => response.json())
-      .then(setData)
-      .catch(console.error)
-  }, [login]);
-
-  if (data) {
-    return <pre>{ JSON.stringify(data,null,2)}</pre>
-  }
-
-  return null;
-}
 
 const tahoe_peaks = [
   { name: "Freel Peak", elevation: 10091},
@@ -47,6 +32,8 @@ const bigList = [...Array(5000)].map(() => ({
 }))
 
 const App = () => {
+  const [login, setLogin] = useState('DevFrog92');
+
   const renderRow = ({ index, style }) => (
     <div style={{ ...style, ...{ display: "flex" } }}>
       <img
@@ -60,14 +47,10 @@ const App = () => {
     </div>
   )
   return (
-    <FixedSizeList
-      height={window.innerHeight}
-      width={window.innerWidth}
-      itemCount={bigList.length}
-      itemSize={50}
-    >
-      { renderRow }
-    </FixedSizeList>
+    <>
+      <SearchForm value={login} onSearch={setLogin} />
+    <GithubUser login={login} />
+    </>
   )
 }
 
