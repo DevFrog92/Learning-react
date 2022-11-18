@@ -1,5 +1,4 @@
 import Fetch from "./Fetch";
-import UserRepositories from "./UserRepositories"
 const GithubUser = ({ login }) => {
   return <Fetch uri={`https://api.github.com/users/${login}`} renderSuccess={ UserDetail} />
 }
@@ -17,7 +16,6 @@ const UserDetail = ({ data }) => {
         {data.name && <p>{ data.name}</p>}
         {data.location && <p>{ data.location}</p>}
       </div>
-      <UserRepositories login={data.login} onSelect={ repoName => console.log(`${repoName} selected`)} />
     </div>
   );
 }

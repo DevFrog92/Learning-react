@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import useIterator from "../hook/useIterator";
-import RepositoryReadme from "./LoadReadme";
 
 const RepoMenu = ({
   repositories,
-  login
 }) => {
   const [{ name }, previous, next] = useIterator({items:repositories});
 
@@ -15,7 +13,6 @@ const RepoMenu = ({
       <p>{name}</p>
       <button onClick={next}>&gt;</button>
       </div>
-      <RepositoryReadme login={login} repo={name} />
     </>
   )
 }
